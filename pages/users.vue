@@ -18,6 +18,7 @@
 
 <script>
 export default {
+  layout: 'users',
   data() {
     return {
       newUserId: '',
@@ -27,6 +28,6 @@ export default {
     insertNewUserId() {
       this.$router.push('/users/'+ this.newUserId + '/more-detail');
     }
-  },
+  }
 }
 </script>

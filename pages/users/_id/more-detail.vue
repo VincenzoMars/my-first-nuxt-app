@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  layout: 'users',
   validate (data) {
     console.log(data)
     // questo metodo viene eseguito all'arrivo in questa route con un parametro, 
