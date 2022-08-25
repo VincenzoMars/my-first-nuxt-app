@@ -1,15 +1,12 @@
 <template>
   <div>
-    <h1>More Detail for: {{$route.params.id}}</h1>
-    <nuxt-link to="/users">/users</nuxt-link>
+    <h1>more details for: {{$route.params.id}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'users',
   validate (data) {
-    console.log(data)
     // questo metodo viene eseguito all'arrivo in questa route con un parametro, 
     // il data rappresenta il payload, da li si potrà validare quello che si vuole.
     // il 'return' di questo metodo decreta se la validazione sia andata bene o meno, 

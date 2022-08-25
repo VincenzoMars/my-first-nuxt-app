@@ -7,26 +7,25 @@
 
 <template>
   <div>
-    <h1>Users</h1>
-    <p>Elenco id utenti: (work in progress)</p>
+    <h1>Posts</h1>
+    <p>Elenco posts ids: (work in progress)</p>
     <br>
-    <input v-model="newUserId" type="text">
-    <button @click="insertNewUserId()">Inserisci nuovo utente</button>
+    <input v-model="newPostsId" type="text">
+    <button @click="generateNewPostId()">Inserisci nuovo utente</button>
     <nuxt-child/>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'users',
   data() {
     return {
-      newUserId: '',
+      newPostsId: '',
     };
   },
   methods: {
-    insertNewUserId() {
-      this.$router.push('/users/'+ this.newUserId + '/more-detail');
+    generateNewPostId() {
+      this.$router.push('/posts/'+ this.newPostsId + '/more-details');
     }
   }
 }
